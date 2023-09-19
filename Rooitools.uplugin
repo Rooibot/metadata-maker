@@ -1,0 +1,24 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "Rooitools Metadata Maker",
+	"Description": "The Metadata Maker portion of Rooitools, split out for public use.",
+	"Category": "Other",
+	"CreatedBy": "Rooibot Games",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "https://github.com/Rooibot/metadata-maker",
+	"CanContainContent": false,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "Rooitools",
+			"Type": "Editor",
+			"LoadingPhase": "Default"
+		}
+	]
+}
