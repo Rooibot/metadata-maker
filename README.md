@@ -14,6 +14,8 @@ Basically just take the contents of this repository and put them into a `Plugins
 
 ![Screenshot of Metadata Maker](Resources/screenshot.png)
 
+![Screenshot of animation curves](Resources/screenshot2.png)
+
 ### Functionality
 
 The "Metadata Maker" tool is designed to take root-motion animations and convert them to in-place, while generating a whole mess of metadata about what the root motion used to contain. Some example common operations are:
