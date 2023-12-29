@@ -1,0 +1,12 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-Rooitools.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"..\Intermediate\Build\Win64\x64\UnrealEditor\Development\UnrealEd\SharedPCH.UnrealEd.Cpp17.h.obj"
+"F:\Unreal Projects\Fortitude w umfpsv2\Plugins\Rooitools\metadata-maker\Intermediate\Build\Win64\x64\UnrealEditor\Development\Rooitools\Module.Rooitools.cpp.obj"
+"..\Intermediate\Build\Win64\x64\UnrealEditor\Development\Default.rc2.res"
+/OUT:"F:\Unreal Projects\Fortitude w umfpsv2\Plugins\Rooitools\metadata-maker\Intermediate\Build\Win64\x64\UnrealEditor\Development\Rooitools\UnrealEditor-Rooitools.lib"

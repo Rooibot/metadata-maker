@@ -1,0 +1,21 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.Rooitools.cpp.obj": [
+			"AnimationMetadataSettings.gen.cpp.obj",
+			"AnimationMetaSupport.gen.cpp.obj",
+			"Rooitools.init.gen.cpp.obj",
+			"RooitoolTab.gen.cpp.obj",
+			"AnimationMetadataSettings.cpp.obj",
+			"AnimationMetaSupport.cpp.obj",
+			"AnimationMetaToolsTab.cpp.obj",
+			"AnimationMetaWorker.cpp.obj",
+			"BoneCurveTrack.cpp.obj",
+			"RooitoolAnimationCommands.cpp.obj",
+			"RooitoolAnimationModule.cpp.obj",
+			"RooitoolTab.cpp.obj",
+			"Rooitools.cpp.obj",
+			"RooitoolsStyle.cpp.obj"
+		]
+	}
+}

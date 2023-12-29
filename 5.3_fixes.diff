@@ -1,0 +1,30 @@
+diff --git a/Source/Rooitools/Private/Animation/AnimationMetaWorker.cpp b/Source/Rooitools/Private/Animation/AnimationMetaWorker.cpp
+index 1df3f61..c8dfacb 100644
+--- a/Source/Rooitools/Private/Animation/AnimationMetaWorker.cpp
++++ b/Source/Rooitools/Private/Animation/AnimationMetaWorker.cpp
+@@ -505,15 +505,9 @@ void FAnimationMetaTask::WriteOutputTracks(UAnimSequence *Target)
+ 		USkeleton *AnimSkeleton = Target->GetSkeleton();
+ 
+ 		// Create or retrieve our curve names.
+-		auto Mapping = AnimSkeleton->GetSmartNameContainer(USkeleton::AnimCurveMappingName);
+ 		for (auto& BoneTrack : Tracks)
+ 		{
+-			FSmartName Name;
+-			if (!Mapping->FindSmartName(BoneTrack.GetName(), Name))
+-			{
+-				AnimSkeleton->AddSmartNameAndModify(USkeleton::AnimCurveMappingName, BoneTrack.GetName(), Name);;
+-			}
+-			BoneTrack.SetTrackName(Name);
++			AnimSkeleton->AddCurveMetaData(BoneTrack.GetName());
+ 		}
+ 
+ 		// ReSharper disable once CppExpressionWithoutSideEffects
+@@ -544,7 +538,7 @@ void FAnimationMetaTask::WriteOutputTracks(UAnimSequence *Target)
+ 		for (const auto& BoneTrack : this->Tracks)
+ 		{
+ 			FAnimationCurveIdentifier CurveUID = FAnimationCurveIdentifier(
+-				BoneTrack.GetTrackName(), ERawCurveTrackTypes::RCT_Float);
++				BoneTrack.GetName(), ERawCurveTrackTypes::RCT_Float);
+ 
+ 			// Delete any previous curve.
+ 			if (Controller.GetModel()->FindCurve(CurveUID) != nullptr)
